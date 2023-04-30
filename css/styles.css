@@ -877,6 +877,7 @@ ul {
     justify-content: center;
 
     margin-left: auto;
+    margin-bottom: 24px;
     width: 24px;
     height: 24px;
 
@@ -903,7 +904,17 @@ ul {
 }
 
 .modal-title {
+    display: block;
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 16px;
 
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--dark-text-color-1);
 }
 
 .modal-form {

@@ -52,9 +52,11 @@
 
 --animation-transition: 250ms;
 --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
+--modal-form-label-color-1: #8E8F99;
+
 
 }
-
 
 /* =========================================== */
 
@@ -917,10 +919,18 @@ ul {
     color: var(--dark-text-color-1);
 }
 
-.modal-form {
+.modal-form-label {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 4px;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: var(--modal-form-label-color-1);
 }
 
-.contact-forn {
 
-}
+    
+   

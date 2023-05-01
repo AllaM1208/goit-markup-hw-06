@@ -54,7 +54,7 @@
 --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  
 --modal-form-label-color-1: #8E8F99;
---modal-form-input-color-1: #8E8F99;
+--modal-form-input-color-1: #8e8f9940;
 --modal-form-input-color-1-active: #4D5AE5;
 --modal-icon-color-1: #2E2F42;
 --modal-icon-color-1-active:#4D5AE5;
@@ -909,6 +909,8 @@ ul {
     height: 8px;
 }
 
+
+
 .modal-title {
     display: block;
     text-align: center;
@@ -932,7 +934,7 @@ ul {
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.04em;
-    color: var(--modal-form-label-color-1);
+    color: letter 1% var(--modal-form-label-color-1);
 }
 
 .modal-form-field {
@@ -957,5 +959,19 @@ ul {
     color: var(--modal-icon-color-1)
 }
 
+.modal-form-message {
+    width: 100%;
+    height: 120px;
+    
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    
+    border: 1px solid var(--modal-form-input-color-1);
+    border-radius: 4px;
+}
+
+/* форма для коментаря */
  
         

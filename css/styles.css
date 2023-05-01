@@ -924,8 +924,17 @@ ul {
     letter-spacing: 0.02em;
     color: var(--dark-text-color-1);
 }
+.modal-form-label {
+    font-style: normal;
+    margin-bottom: 4px;
 
-
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: var(--modal-form-label-color-1);
+}
 
 .modal-form-field {
     position: relative;
@@ -940,13 +949,17 @@ ul {
     border: 1px solid var(--modal-form-input-color-1);
     border-radius: 4px;
 }
+.modal-form-input:focus {
+    border: 1px solid var(--modal-form-input-color-1-active);
+} 
 
 .modal-icon-form {
     position: absolute;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-    color: var(--modal-icon-color-1)
+    color: var(--modal-icon-color-1);
+    cursor: pointer;
 }
 
 

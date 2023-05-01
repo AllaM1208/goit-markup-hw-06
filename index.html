@@ -560,7 +560,7 @@
 
             <label class="modal-form-label" for="user_name">Name</label>
             <div class="modal-form-field">
-                <input  class="modal-form-input" type="text" name="user_name" id="user_name">
+                <input  class="modal-form-input" type="text" name="user_name" id="user_name" required/>
                 <svg class="modal-icon-form" width="12" height="12">
                     <use href="./images/icon.svg#icon-user-name"></use>
                 </svg>
@@ -568,7 +568,7 @@
 
             <label class="modal-form-label" for="user_phone">Phone</label>
             <div class="modal-form-field">
-                <input  class="modal-form-input" type="text" name="user_phone" id="user_phone">
+                <input  class="modal-form-input" type="text" name="user_phone" id="user_phone" required/>
                 <svg class="modal-icon-form" width="13" height="13">
                     <use href="./images/icon.svg#icon-user-phone"></use>
                 </svg>
@@ -576,7 +576,7 @@
 
             <label class="modal-form-label" for="user_email">Email</label>
             <div class="modal-form-field">
-                <input  class="modal-form-input" type="text" name="user_email" id="user_email">
+                <input  class="modal-form-input" type="text" name="user_email" id="user_email" required/>
                 <svg class="modal-icon-form" width="15" height="12">
                     <use href="./images/icon.svg#icon-user-email"></use>
                 </svg>
@@ -590,10 +590,15 @@
                         placeholder="Text input"
             ></textarea>
 
+            <label class="modal-form-agreement">
+                <input class="modal-form-agreement-box" type="checkbox" name="user_agreement" id="user_agreement">
+                <span class="modal-form-agreement-text">I accept the terms and conditions of the </span>
+                <a class="modal-form-agreement-link">Privacy Policy</a>
+            </label>
 
-
-
+            <button class="modal-form-button" type="submit">Send</button>
         </form>
+
     </div>
 </div>
 

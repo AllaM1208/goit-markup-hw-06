@@ -56,8 +56,8 @@
 --modal-form-label-color-1: #8E8F99;
 --modal-form-input-color-1: #8E8F99;
 --modal-form-input-color-1-active: #4D5AE5;
---modal-modal-icon-color-1: #2E2F42;
---modal-modal-icon-color-1-active::#4D5AE5;
+--modal-icon-color-1: #2E2F42;
+--modal-icon-color-1-active:#4D5AE5;
 
 }
 
@@ -949,22 +949,13 @@ ul {
     border-radius: 4px;
 }
 
-.modal-form-input:hover,
-.modal-form-input:focus {
-    border: 1px solid var(--modal-form-input-color-1-active);
-
-}
-
-.name-active 
-
-
 .modal-icon-form {
     position: absolute;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
-    color: #2E2F42;
-
+    color: var(--modal-icon-color-1)
 }
+
  
-    
+        

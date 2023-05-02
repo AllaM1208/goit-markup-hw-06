@@ -43,7 +43,7 @@
 /* modal-window */
 --modal-idx: 10;
 --modal-window-background-color: #FCFCFC;
---modal-window-button-background: #E7E9FC;
+--modal-window-button-background: #E7E9FC; 
 --modal-window-button-background-hover-focus: #404BBF;
 
 --modal-icon-close-color-1: #2E2F42;
@@ -57,6 +57,7 @@
 --modal-icon-color-1: #2E2F42;
 --modal-icon-color-1-active:#4D5AE5;
 --modal-form-agreement-link-color: #4D5AE5;
+--modal-form-agreement-box: #F4F4FD;
 --modal-form-agreement-box-checked: #404BBF;
 
 }
@@ -1047,6 +1048,7 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 10px;
+    background-color: #F4F4FD;
 
     transition-property: color, background-color, border, border-radius, background-image;
     transition-duration: var(--animation-transition);

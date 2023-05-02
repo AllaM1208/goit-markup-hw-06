@@ -4,8 +4,7 @@
 --logo-color-1: #4D5AE5;
 --logo-color-2: #2E2F42;
 --logo-color-3: #F4F4FD;
-
-    
+   
 /* text */
 --dark-text-color-1: #2E2F42;
 --dark-text-color-2: #434455;
@@ -58,6 +57,8 @@
 --modal-icon-color-1: #2E2F42;
 --modal-icon-color-1-active:#4D5AE5;
 --modal-form-agreement-link-color: #4D5AE5;
+--modal-form-agreement-box-checked: #404BBF;
+
 }
 
  
@@ -1026,12 +1027,31 @@ ul {
 .modal-form-agreement {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+
     margin-bottom: 24px;
+    gap: 5px;
 }
 
 .modal-form-agreement-box {
-    margin-right: 8px;
+    appearance: none;
+
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;    
+    cursor: pointer;
+
+    transition-property: color, background-color, border, border-radius;
+    transition-duration: var(--animation-transition);
+    transition-timing-function: var(--transition-timing-function);
+}
+
+.modal-form-agreement-box:checked {
+    background-color: var(--modal-form-agreement-box-checked);
+    border: 1px solid var(--modal-form-agreement-box-checked);
+    border-radius: 2px;
 }
 
 .modal-form-agreement-text {
@@ -1053,7 +1073,7 @@ ul {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.04em;
-    color: var(--modal-form-agreement-link-color)
+    color: var(--modal-form-agreement-link-color);
 }
 
 .modal-form-button {

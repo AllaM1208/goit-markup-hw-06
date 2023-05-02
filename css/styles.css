@@ -568,6 +568,7 @@ ul {
 
 /* =============================== */
         /*footer section */
+        
 .footer-section {
     background: var(--dark-background-color-1);
     padding: 100px 0;
@@ -661,6 +662,28 @@ ul {
     justify-content: center;
     gap: 16px;
 }
+
+
+.footer-mail-container {
+    display: flex;
+    gap: 24px;
+    margin-left: 80px;
+}
+
+.footer-mail-input-label {
+    font-style: normal;
+    margin-bottom: 4px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+==============
 
        /* footer section */
 /* =============================== */

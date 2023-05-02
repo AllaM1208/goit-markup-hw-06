@@ -664,10 +664,16 @@ ul {
 }
 
 
+
+
+
+
+
+
 .footer-mail-container {
     display: flex;
     gap: 24px;
-    margin-left: 80px;
+    
 }
 
 .footer-mail-input-label {
@@ -683,9 +689,24 @@ ul {
 }
 
 .footer-mail-input {
-    margin-top: 16px;
+    width: 264px;
+    height: 40px;
+    
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+
+    transition-property: border;
+    transition-duration: var(--animation-transition);
+    transition-timing-function: var(--transition-timing-function);
 }
 
+.footer-mail-input:focus {
+    border: 1px solid var(--modal-form-input-color-1-active);
+}
 
 
 

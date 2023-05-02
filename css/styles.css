@@ -671,7 +671,6 @@ ul {
 }
 
 .footer-mail-input-label {
-    font-style: normal;
     margin-bottom: 4px;
 
     font-family: 'Roboto';
@@ -683,7 +682,15 @@ ul {
     color: #FFFFFF;
 }
 
-==============
+.footer-mail-input {
+    margin-top: 16px;
+}
+
+
+
+
+
+
 
        /* footer section */
 /* =============================== */

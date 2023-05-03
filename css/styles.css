@@ -33,11 +33,13 @@
 
 --footer-socials-icon-background-color-1: #4D5AE5;
 --footer-socials-icon-background-hover-focus: #31D0AA;
+--footer-mail-input-border: #FFFFFF;
 
 --header-nav-color-hover-focus: #404BBF;
 
 --overlay-label-background-hover-focus: #4d5ae5ea;
 --overlay-label-color-text-hover-focus: #F4F4FD;
+
 
 /* =================================================== */
 /* modal-window */
@@ -62,7 +64,6 @@
 --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-
  
 /* =========================================== */
 
@@ -665,15 +666,6 @@ ul {
 }
 
 
-
-
-
-
-
-
-
-
-
 .footer-mail-container {
     display: inline-flex;
     align-items: flex-end;
@@ -693,14 +685,12 @@ ul {
     line-height: 24px;
     letter-spacing: 0.02em;
         
-    color: #FFFFFF;
+    color: var(--light-text-color-2);
 }
 .footer-mail-field {
     display: flex;
     position: relative;
 }
-
-
 
 .footer-mail-input {
     display: flex;
@@ -737,13 +727,6 @@ ul {
     transform: translateY(-50%);
 }   
 
-.footer-mail-input:visited + .footer-mail-icon {
-    position: absolute;
-    top: 0%;
-    left: 16px;
-    transform: translateY(-50%);
-}
-
 .footer-mail-icon {
     position: absolute;
     top: 50%;
@@ -760,10 +743,8 @@ ul {
     transition-property: color, background-color, position, left, top, transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0, 0, 0, 0.63);
-        
-}
-        
-
+}   
+    
 .footer-mail-button {
     display: flex;
     justify-content: space-between;
@@ -800,15 +781,6 @@ ul {
 .footer-mail-button:focus {
     background-color: var(--button-change-color-1);
 }
-
-
-
-
-
-
-
-
-
 
        /* footer section */
 /* =============================== */

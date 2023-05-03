@@ -734,7 +734,7 @@ ul {
     top: 0%;
     left: 16px;
     transform: translateY(-50%);
-}
+}   
 
 .footer-mail-icon {
     position: absolute;
@@ -749,14 +749,12 @@ ul {
     fill: #FFFFFF;
     background: var(--dark-background-color-1);
     
-    transition-property: fill;
+    transition-property: color, background-color, position, left, top, transform;
     transition-duration: 5000ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--transition-timing-function);
+    
 }
- 
-/* animation */
-
-
+        
 
 .footer-mail-button {
     display: flex;
@@ -1260,3 +1258,9 @@ ul {
 .modal-form-button:focus {
     background-color: var(--button-change-color-1);
 }
+
+
+
+
+
+ 

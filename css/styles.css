@@ -49,9 +49,6 @@
 --modal-icon-close-color-1: #2E2F42;
 --modal-icon-close-color-1-hover-focus: #FFFFFF;
 
---animation-transition: 250ms;
---transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- 
 --modal-form-label-color-1: #8E8F99;
 --modal-form-input-color-1-active: #4D5AE5;
 --modal-icon-color-1: #2E2F42;
@@ -59,6 +56,10 @@
 --modal-form-agreement-link-color: #4D5AE5;
 --modal-form-agreement-box: #F4F4FD;
 --modal-form-agreement-box-checked: #404BBF;
+
+/*Animation*/
+--animation-transition: 250ms;
+--transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -701,6 +702,9 @@ ul {
 
 
 .footer-mail-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 264px;
     height: 40px;
 
@@ -709,6 +713,13 @@ ul {
     padding-left: 16px;
     padding-right: 16px;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #FFFFFF;
+
     background: border-box;    
     border: 1px solid #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -716,14 +727,13 @@ ul {
 
     outline: 2px solid transparent;
     outline-offset: -2px;
-
-    transition-property: border;
-    transition-duration: var(--animation-transition);
-    transition-timing-function: var(--transition-timing-function);
 }
 
-.footer-mail-input:focus {
-    border: 1px solid var(--modal-form-input-color-1-active);
+.footer-mail-input:focus + .footer-mail-icon {
+    position: absolute;
+    top: 0%;
+    left: 16px;
+    transform: translateY(-50%);
 }
 
 .footer-mail-icon {
@@ -734,15 +744,19 @@ ul {
 
     cursor: pointer;
     pointer-events: none;
+    z-index: var(--modal-idx);
    
     fill: #FFFFFF;
+    background: var(--dark-background-color-1);
     
     transition-property: fill;
-    transition-duration: var(--animation-transition);
-    transition-timing-function: var(--transition-timing-function);
+    transition-duration: 5000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
  
+/* animation */
+
+
 
 .footer-mail-button {
     display: flex;

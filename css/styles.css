@@ -126,6 +126,7 @@ ul {
 .header-container {     
     display: flex;
     align-items: center;
+
     padding: 0 15px;    
 }
 
@@ -154,10 +155,10 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    color:var(--logo-color-1); 
 
     margin-right: 76px;
 
-    color:var(--logo-color-1); 
 }
 
 .header-logo-studio {
@@ -169,7 +170,6 @@ ul {
 
     text-transform: uppercase;
     text-decoration: none;
-
     color: var(--logo-color-2);
 }
 
@@ -181,11 +181,10 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em; 
+    color: var(--dark-text-color-1);    
        
     padding-top: 24px;
     padding-bottom: 24px; 
-
-    color: var(--dark-text-color-1);    
 
     transition-property: color, background-color;
     transition-duration: var(--animation-transition);
@@ -282,6 +281,7 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--light-text-color-2);
+
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
@@ -291,13 +291,6 @@ ul {
 /* Normal state */
 
 .hero-image-button {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--button-text-color-2);
-    background-color: var(--button-color-1);
     cursor: pointer;
     display: block;
     min-width: 169px;
@@ -305,9 +298,20 @@ ul {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+
     margin-left: auto;
     margin-right: auto;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    color: var(--button-text-color-2);
+    background-color: var(--button-color-1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
     
     transition-property:color, background-color, box-shadow;
     transition-duration: var(--animation-transition);
@@ -344,20 +348,21 @@ ul {
 
 .list-features {
     display: flex;
-    gap: 24px; 
     padding-left: 0px;
+    gap: 24px; 
 }
 
 .icon-container {
-    background: var(--light-background-color-1);
-    height: 112px;
-    border-radius: 4px;
     display: flex;
     align-items: center;
-    justify-content: center;      
+    justify-content: center; 
+    height: 112px;
+    
+    background: var(--light-background-color-1);
+    
+    border-radius: 4px;
     margin-bottom: 8px;
 }
-
 
 .features-title {   
     font-weight: 500;
@@ -365,6 +370,7 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-text-color-1);
+
     margin-bottom: 8px;
 }
 
@@ -372,9 +378,11 @@ ul {
     position: absolute;
     width: 1px;
     height: 1px;
+
     margin: -1px;
-    border: 0;
     padding: 0;
+
+    border: 0;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -402,9 +410,11 @@ ul {
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--dark-text-color-1);
     text-transform: capitalize;
-    margin-bottom: 72px;}
+    color: var(--dark-text-color-1);
+
+    margin-bottom: 72px;
+}
 
 .list-doing-section {
     display: flex;
@@ -432,7 +442,7 @@ ul {
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
+    text-transform: capitalize;    
     color: var(--dark-text-color-1);
 }
 
@@ -461,7 +471,8 @@ ul {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--dark-text-color-1);
-    margin-bottom: 8px
+
+    margin-bottom: 8px;
 }
 
 .specialist-team {   
@@ -471,6 +482,7 @@ ul {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--dark-text-color-2);
+
     margin-bottom: 8px;
 }
 
@@ -489,8 +501,10 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 100%;
     height: 100%;
+
     background-color: var(--socials-icon-background-color-1);
     border-radius: 50%;
 
@@ -505,9 +519,9 @@ ul {
 }
 
 .socials-icon {
-    fill: var(--socials-icon-color-1);
     width: 16px;
     height: 16px;
+    fill: var(--socials-icon-color-1);
 }
 
          /*  team section 4 */
@@ -545,11 +559,12 @@ ul {
     display: flex;
     width: 100%;
     height: 100%;
-    border: 1px solid var(--clients-icon-color-1);
-    border-radius: 4px;
     align-items: center;
     justify-content: center;
+
+    border-radius: 4px;
     color: var(--clients-icon-color-1);
+    border: 1px solid var(--clients-icon-color-1);
 
     transition-property: color, background-color;
     transition-duration: var(--animation-transition);
@@ -563,9 +578,9 @@ ul {
 }
  
 .clients-icon {
-    fill: currentColor;
     width: 104px;
-     height: 56px;
+    height: 56px;
+    fill: currentColor;
 
 }
         /* customers section 5 */
@@ -585,28 +600,31 @@ ul {
 }
 
 .footer-logo-container {
-        margin-right: 120px;
+    margin-right: 120px;
 }
 
 .footer-section-text {  
+    width: 264px;
+
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--light-text-color-1);
-    width: 264px;
 }
 
 .footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+
     font-family: "Raleway", sans-serif;     
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--logo-color-1);  
+
     text-transform: uppercase;
     text-decoration: none;
-    display: inline-block;
-    margin-bottom: 16px;
 }
 
 .footer-logo-studio {
@@ -615,9 +633,10 @@ ul {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    color: var(--logo-color-3);
+
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--logo-color-3);
 }
 
 .footer-socials-item {
@@ -625,13 +644,14 @@ ul {
     height: 40px;
 }
 
-
 .footer-socials-link {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 100%;
     height: 100%;
+
     background-color: var(--footer-socials-icon-background-color-1);
     border-radius: 50%;
 
@@ -659,6 +679,7 @@ ul {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--light-text-color-2);
+
     margin-bottom: 16px;
 }
 
@@ -667,7 +688,6 @@ ul {
     justify-content: center;
     gap: 16px;
 }
-
 
 .footer-mail-container {
     display: inline-flex;
@@ -684,10 +704,8 @@ ul {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-
     line-height: 24px;
-    letter-spacing: 0.02em;
-        
+    letter-spacing: 0.02em;        
     color: var(--light-text-color-2);
 }
 .footer-mail-field {
@@ -699,6 +717,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 264px;
     height: 40px;
 
@@ -712,6 +731,7 @@ ul {
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
+    letter-spacing: 0.04em;
     color: var(--footer-mail-input-color);
 
     background: border-box;    
@@ -728,7 +748,7 @@ ul {
     top: 0%;
     left: 16px;
     transform: translateY(-50%);
-}   
+ }   
 
 .footer-mail-icon {
     position: absolute;
@@ -758,6 +778,7 @@ ul {
        
     min-width: 165px;
     height: 40px;
+
     border: none;
     border-radius: 4px;
     
@@ -822,12 +843,16 @@ ul {
     align-items: flex-start;
     justify-content: center;    
     gap: 24px;
+
     margin-bottom: 72px;   
     padding: 0;
     white-space: nowrap;
 }
 
 .filter-button {
+    padding: 12px 24px;
+    cursor: pointer; 
+
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -837,8 +862,6 @@ ul {
     background: var(--button-color-2);
     border: 1px solid var(--button-border-color-1);
     border-radius: 4px;
-    cursor: pointer; 
-    padding: 12px 24px;
 
     transition-property: color, background-color, box-shadow;
     transition-duration: var(--animation-transition);
@@ -899,14 +922,17 @@ ul {
 }
 
 .overlay {
+    display: flex;
     position: absolute;
+
+    width: 100%;
+    height: 100%;
+    
     top: 0;
     left: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+
     transform: translateY(100%);
-    display: flex;
     transition-duration: var(--animation-transition);
 }
 
@@ -937,6 +963,7 @@ ul {
     font-size: 20px;
     letter-spacing: 0.02em;
     color: var(--dark-text-color-1);
+
     margin-bottom: 8px;
     }       
 
@@ -1008,6 +1035,7 @@ ul {
 
     margin-left: auto;
     margin-bottom: 24px;
+
     width: 24px;
     height: 24px;
 
@@ -1071,8 +1099,8 @@ ul {
     height: 40px;
     padding: 0 38px;
 
-    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
 
     outline: 2px solid transparent;
     outline-offset: -2px;
@@ -1180,9 +1208,9 @@ ul {
 }
 
 .modal-form-agreement-box:checked {
-    background-color: var(--modal-form-agreement-box-checked);
-    border: 1px solid var(--modal-form-agreement-box-checked);
     border-radius: 2px;
+    border: 1px solid var(--modal-form-agreement-box-checked);
+    background-color: var(--modal-form-agreement-box-checked);
 }
 
 .modal-form-agreement-text {
@@ -1199,8 +1227,8 @@ ul {
 
 .modal-form-agreement-link {
     font-style: normal;
-
     cursor: pointer;
+
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 12px;
@@ -1212,6 +1240,18 @@ ul {
 }
 
 .modal-form-button {
+    display: block;
+    cursor: pointer;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -1219,17 +1259,7 @@ ul {
     letter-spacing: 0.04em;
     color: var(--button-text-color-2);
     background-color: var(--button-color-1);
-    cursor: pointer;
-    display: block;
-    min-width: 169px;
-    height: 56px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
+    
     transition-property: color, background-color, box-shadow;
     transition-duration: var(--animation-transition);
     transition-timing-function: var(--transition-timing-function);

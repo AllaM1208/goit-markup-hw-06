@@ -696,6 +696,7 @@ ul {
     color: #FFFFFF;
 }
 .footer-mail-field {
+    display: flex;
     position: relative;
 }
 
@@ -736,6 +737,13 @@ ul {
     transform: translateY(-50%);
 }   
 
+.footer-mail-input:visited + .footer-mail-icon {
+    position: absolute;
+    top: 0%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
 .footer-mail-icon {
     position: absolute;
     top: 50%;
@@ -750,9 +758,9 @@ ul {
     background: var(--dark-background-color-1);
     
     transition-property: color, background-color, position, left, top, transform;
-    transition-duration: 5000ms;
-    transition-timing-function: var(--transition-timing-function);
-    
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0, 0, 0, 0.63);
+        
 }
         
 

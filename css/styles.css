@@ -681,9 +681,12 @@ ul {
 
 
 
-
-
-
+.footer-mail-container {
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: auto;
+}
 
 .footer-mail-form-label {
     font-family: 'Roboto';
@@ -694,21 +697,12 @@ ul {
     letter-spacing: 0.02em;
     
     margin-bottom: 4px;
-
+    
     color: #FFFFFF;
 }
 
-
-.footer-mail-input-label {
-    margin-bottom: 4px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
+.footer-mail-field {
+    margin-top: 16px;
 }
 
 .footer-mail-input {
@@ -736,7 +730,9 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     padding: 8px 24px;
+    margin-left: 24px;
        
     min-width: 165px;
     height: 40px;
@@ -761,11 +757,11 @@ ul {
 }
 
 /* Active state */
-
 .footer-mail-button:hover,
 .footer-mail-button:focus {
     background-color: var(--button-change-color-1);
 }
+
 
 
 

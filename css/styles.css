@@ -688,15 +688,11 @@ ul {
     justify-content: center;
     gap: 16px;
 }
-
 .footer-mail-container {
-    display: inline-flex;
-    align-items: flex-end;
-    justify-content: flex-end;
     margin-left: auto;
 }
 
-.footer-mail-form-label {
+.footer-mail-team {
     display: block;
     margin-bottom: 16px;
 
@@ -708,6 +704,11 @@ ul {
     letter-spacing: 0.02em;        
     color: var(--light-text-color-2);
 }
+
+.footer-mail-form {
+    display: flex;
+}
+
 .footer-mail-field {
     display: flex;
     position: relative;
